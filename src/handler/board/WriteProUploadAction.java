@@ -21,7 +21,7 @@ public class WriteProUploadAction implements CommandHandler {
 	public String process(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		// 5-1)
 		BoardDataBean article = new BoardDataBean();
-		BoardDBMybatis dbPro=BoardDBMybatis.getInstance();
+		BoardDBMybatis dbPro=BoardDBMybatis.getInstance(); // BoardDBBean ==> BoardDBMybatis로 바꾸기.
 		
 		
 		// =================================================
