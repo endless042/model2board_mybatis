@@ -11,6 +11,7 @@ import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import board.BoardDBBean;
+import board.BoardDBMybatis;
 import board.BoardDataBean;
 import controller.CommandHandler;
 
@@ -20,7 +21,7 @@ public class WriteProUploadAction implements CommandHandler {
 	public String process(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		// 5-1)
 		BoardDataBean article = new BoardDataBean();
-		BoardDBBean dbPro=BoardDBBean.getInstance();
+		BoardDBMybatis dbPro=BoardDBMybatis.getInstance();
 		
 		
 		// =================================================
